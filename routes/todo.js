@@ -12,6 +12,7 @@ todoRouter.get("/",async (req,res) => {
     } catch (error) {
         console.log(error);
         res.statusMessage = error;
+        console.log('test');
         res.status(500).json({error: error});
     }
 });
